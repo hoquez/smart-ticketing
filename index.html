@@ -12,120 +12,97 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Alpha Clash Pro</title>
+    <title>Smart Ticketing</title>
   </head>
   <body class="font-poppins">
-    <main
-      class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center"
-    >
-      <!-- Home Screen -->
-      <section
-        id="home-screen"
-        class="min-h-screen text-white flex flex-col justify-center items-center"
-      >
-        <div class="flex flex-col items-center gap-10">
-          <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro</h1>
-          <p>Unleash Your Keyboard Kun g Fu : Press "Enter" to Play</p>
-          <button onclick="play()" class="btn bg-white text-black">Play</button>
-        </div>
-      </section>
-      <!-- Playground Start-->
-      <section id="play-ground" class="hidden">
-        <div class="flex flex-col items-center justify-center gap-20 pt-20">
-          <!-- Screen -->
-          <div
-            class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] flex justify-center"
-          >
-            <div>
-              <p class="inline-block bg-[#2F2941] text-white p-2 rounded-b-2xl">
-                Don't Watch Keyboard While Playing....
-              </p>
-              <div class="flex justify-center items-center h-full">
-                <p
-                  id="current-alphabet"
-                  class="text-black text-9xl font-bold uppercase"
-                >
-                  Y
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- keyboard start-->
-          <div>
-            <div class="flex justify-center gap-1 my-1 w-full">
-              <kbd id="q" class="kbd">q</kbd>
-              <kbd id="w" class="kbd">w</kbd>
-              <kbd id="e" class="kbd">e</kbd>
-              <kbd id="r" class="kbd">r</kbd>
-              <kbd id="t" class="kbd">t</kbd>
-              <kbd id="y" class="kbd">y</kbd>
-              <kbd id="u" class="kbd">u</kbd>
-              <kbd id="i" class="kbd">i</kbd>
-              <kbd id="o" class="kbd">o</kbd>
-              <kbd id="p" class="kbd">p</kbd>
-            </div>
-            <div class="flex justify-center gap-1 my-1 w-full">
-              <kbd id="a" class="kbd">a</kbd>
-              <kbd id="s" class="kbd">s</kbd>
-              <kbd id="d" class="kbd">d</kbd>
-              <kbd id="f" class="kbd">f</kbd>
-              <kbd id="g" class="kbd">g</kbd>
-              <kbd id="h" class="kbd">h</kbd>
-              <kbd id="j" class="kbd">j</kbd>
-              <kbd id="k" class="kbd">k</kbd>
-              <kbd id="l" class="kbd">l</kbd>
-            </div>
-            <div class="flex justify-center gap-1 my-1 w-full">
-              <kbd id="z" class="kbd">z</kbd>
-              <kbd id="x" class="kbd">x</kbd>
-              <kbd id="c" class="kbd">c</kbd>
-              <kbd id="v" class="kbd">v</kbd>
-              <kbd id="b" class="kbd">b</kbd>
-              <kbd id="n" class="kbd">n</kbd>
-              <kbd id="m" class="kbd">m</kbd>
-              <kbd id="/" class="kbd">/</kbd>
-            </div>
-          </div>
-          <!-- Keyboard end -->
-          <!-- Life score -->
-          <div class="flex justify-between w-1/2">
-            <!-- display life -->
-            <button class="btn rounded-full bg-purple-400 text-white px-4">
-              Life
-              <img src="./images/heart.svg" alt="" />
-              <span id="current-life">5</span>
-            </button>
-            <!-- display score -->
-            <button class="btn rounded-full bg-purple-700 text-white">
-              Score
-              <img src="./images/dollar.svg" alt="" />
-              <span id="current-score">0</span>
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- Playground End -->
-      <!-- Final Score Start -->
-      <section
-        id="final-score"
-        class="flex justify-center items-center min-h-screen hidden"
+    <header>
+      <nav
+        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
       >
         <div
-          class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg"
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
         >
-          <h4 class="text-3xl">Game Over!</h4>
-          <h1 class="text-8xl">
-            <span class="font-extrabold">Score:</span>
-            <span id="game-score">0</span>
-          </h1>
-          <button onclick="play()" class="bg-white text-black p-4 rounded-2xl">
-            Play Again
-          </button>
-          <p>Practice will make yu a Pro</p>
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Smart-Ticket</span
+            >
+          </a>
+          <div
+            class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="text-green-400 btn bg-green-100 font-medium rounded-lg text-sm px-4 py-2 text-center"
+            >
+              Bus <img src="/images/bus-icon.png" alt="" />
+            </button>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-400 rounded hover:text-blue-700"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Destination</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-400 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Search</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </section>
-    </main>
-
+      </nav>
+    </header>
     <script src="./js/utility.js"></script>
     <script src="./js/index.js"></script>
   </body>
