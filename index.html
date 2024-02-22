@@ -279,8 +279,10 @@
             ></div>
           </div>
           <!-- Selecting seat -->
-          <div class="bg-white rounded-2xl mx-96 mt-12 p-6">
-            <div id="left-side" class="">
+          <div
+            class="bg-white rounded-2xl mx-96 mt-12 p-6 flex flex-row gap-10"
+          >
+            <div id="left-side" class="w-1/2">
               <h3 class="mb-4">Select Your Seat</h3>
               <div class="flex flex-row justify-between mb-4">
                 <button class="btn bg-white border-0 pl-0">
@@ -295,65 +297,114 @@
                   <img src="/images/steering.svg" alt="" />
                 </div>
                 <div>A</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">A1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">A2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">A3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">A4</div>
+                <div
+                  id="A1"
+                  onclick="play()"
+                  class="bg-[#F7F8F8] py-2 px-4 rounded-lg"
+                >
+                  A1
+                </div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">A2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">A3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">A4</div>
                 <div>B</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">B1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">B2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">B3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">B4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">B1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">B2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">B3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">B4</div>
                 <div>C</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">C1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">C2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">C3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">C4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">C1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">C2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">C3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">C4</div>
                 <div>D</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">D1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">D2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">D3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">D4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">D1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">D2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">D3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">D4</div>
 
                 <div>E</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">E1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">E2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">E3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">E4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">E1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">E2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">E3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">E4</div>
                 <div>F</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">F1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">F2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">F3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">F4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">F1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">F2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">F3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">F4</div>
                 <div>G</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">G1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">G2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">G3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">G4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">G1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">G2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">G3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">G4</div>
                 <div>H</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">H1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">H2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">H3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">H4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">H1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">H2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">H3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">H4</div>
                 <div>I</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">I1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">I2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">I3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">I4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">I1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">I2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">I3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">I4</div>
                 <div>J</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">J1</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">J2</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">J3</div>
-                <div class="bg-[#F7F8F8] py-2 px-4 rounded-sm">J4</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">J1</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">J2</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">J3</div>
+                <div class="bg-[#F7F8F8] py-2 px-4 rounded-lg">J4</div>
               </div>
             </div>
 
-            <div>Sele</div>
+            <div class="w-1/2">
+              <!-- right side of selecting a seat -->
+              <h3 class="mb-6">Select Your Seat</h3>
+              <div class="bg-[#F7F8F8] rounded-2xl mb-6">
+              <div class=" px-10 py-6 grid grid-cols-3 gap-x-24 gap-y-6">
+                <div>Seat <span class="bg-green-400 px-1 rounded-lg">2</span></div>
+                <div>Class</div>
+                <div>Price</div>
+                <div class="text-gray-400">C2</div>
+                <div class="text-gray-400">Economy</div>
+                <div class="text-gray-400">550</div>
+                <div class="text-gray-400">C2</div>
+                <div class="text-gray-400">Economy</div>
+                <div class="text-gray-400">550</div>
+                <div class="mt-2">Total Price</div>
+                <div></div>
+                <div class="mt-2">BDT 1100</div>
+              </div>
+                <div class="flex flex-row justify-between ml-10 mr-12 rounded-2xl ">
+                  <input class="flex-1 pl-4 outline-none" type="text" name="" id="" placeholder="Have you any coupon">
+                  <button class="btn bg-green-400 text-white">Apply</button>
+                </div>
+                <div class="flex flex-row justify-between py-4 pl-2 pr-8 mx-7 my-2">
+                  <h5>Grand Total</h5>
+                  <h5>BDT 1100</h5>
+                </div>
+              </div>
+              <div class="p-1 mr-5">
+                <h5 class="p-4">Passenger Name*</h5>
+              <input class="p-4 ml-4 border-gray-300 border-[1px] rounded-2xl w-full" type="text" name="" id="" placeholder="Enter your name">
+              <h5 class="p-4">Phone Number</h5>
+              <input class="p-4 ml-4 w-full border-gray-300 border-[1px] rounded-2xl" type="number" name="" id="" placeholder="Enter your phone number">
+              <h5 class="p-4">Email ID</h5> 
+              <input class="p-4 ml-4 w-full border-gray-300 border-[1px] rounded-2xl" type="email" name="" id="" placeholder="Enter your email id">
+              <button class="btn btn-lg mt-6 w-full text-white bg-green-400 ml-4">Next</button>
+              </div>
+              <div class=" flex flex-row justify-around text-gray-400 p-4">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Cancellation Policy</a>
+              </div>
+              </div>
+            </div> 
           </div>
         </div>
+        <div class="h-10 bg-[#F7F8F8]"></div>
       </section>
     </main>
     <script src="./js/utility.js"></script>
     <script src="./js/index.js"></script>
+    <footer></footer>
   </body>
 </html>
