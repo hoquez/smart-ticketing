@@ -87,4 +87,5 @@
 function play() {
   const bgChange = document.getElementById("A1");
   bgChange.classList.add("bg-green-400");
+  bgChange.classList.add("text-white");
 }
