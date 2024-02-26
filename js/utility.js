@@ -58,3 +58,22 @@ function gameOver() {
   const currentAlphabet = getTextElementTextById("current-alphabet");
   removeBackgroundColorById(currentAlphabet);
 }
+
+//seat planning
+
+function selectedSeatOnInvoice(clickedSeat) {
+  const clickedSeatId = clickedSeat.id;
+  const selectedSeat = document.getElementById(clickedSeatId);
+  const seatOnInvoice = document.getElementById("selected-seat-invoice");
+  const divSeatNum = document.createElement("div");
+  divSeatNum.innerText = clickedSeatId;
+  seatOnInvoice.appendChild(divSeatNum);
+  //
+  const divSeatClass = document.createElement("div");
+  divSeatClass.innerText = "EE";
+  seatOnInvoice.appendChild(divSeatClass);
+  //
+  const divSeatPrice = document.createElement("div");
+  divSeatClass.innerText = "550";
+  seatOnInvoice.appendChild(divSeatPrice);
+}
