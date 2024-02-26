@@ -68,12 +68,21 @@ function selectedSeatOnInvoice(clickedSeat) {
   const divSeatNum = document.createElement("div");
   divSeatNum.innerText = clickedSeatId;
   seatOnInvoice.appendChild(divSeatNum);
-  //
   const divSeatClass = document.createElement("div");
-  divSeatClass.innerText = "EE";
+  divSeatClass.innerText = "Economy";
   seatOnInvoice.appendChild(divSeatClass);
-  //
   const divSeatPrice = document.createElement("div");
   divSeatClass.innerText = "550";
   seatOnInvoice.appendChild(divSeatPrice);
+
+  //
+  //const divSeatCl = document.createElement("div");
+  //divSeatCl.innerText = "XX";
+  //seatOnInvoice.appendChild(divSeatClass);
+}
+
+function updateSeatLeft() {
+  const currentSeatLeft = getTextElementValueById("seat-left");
+  const updatedSeatNum = currentSeatLeft - 1;
+  setTextElementValueById("seat-left", updatedSeatNum);
 }
